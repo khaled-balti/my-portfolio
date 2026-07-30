@@ -141,11 +141,103 @@ const Portfolio = () => {
   };
 
   const skills = {
-    'DevOps & Cloud': ['Docker', 'Kubernetes', 'Jenkins', 'CI/CD', 'Terraform', 'AWS', 'Ansible', 'Nginx', 'Prometheus', 'Grafana'],
-    'Full-Stack': ['React.js', 'Express.js', 'NestJS', 'Django', 'Spring Boot', 'Redux', 'Material UI', 'TailwindCSS'],
-    'Languages': ['JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'PHP'],
-    'Databases': ['MySQL', 'PostgreSQL', 'MongoDB']
-  };
+  'Full-Stack Frameworks & Libraries': [
+    'React.js',
+    'Express.js',
+    'NestJS',
+    'Django',
+    'Spring Boot',
+    'React Native'
+  ],
+
+  'Programming & Scripting Languages': [
+    'Python',
+    'JavaScript',
+    'TypeScript',
+    'Java',
+    'C++',
+    'C',
+    'PHP'
+  ],
+
+  'Databases & Storage': [
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB'
+  ],
+
+  'Architectures & Protocols': [
+    'Monolithic',
+    'Microservices',
+    'SOA',
+    'REST API',
+    'GraphQL',
+    'WebSockets',
+    'Modular Layered',
+    'Cloud-Native'
+  ],
+
+  'Algorithms & Data Structures': [
+    'Arrays',
+    'Strings',
+    'Graphs',
+    'Greedy Algorithms',
+    'Trees',
+    'Constructive Algorithms',
+    'Dynamic Programming'
+  ],
+
+  'DevOps Tools': [
+    'Docker',
+    'Kubernetes',
+    'Helm',
+    'Ansible',
+    'Terraform',
+    'SonarQube',
+    'Prometheus',
+    'Grafana',
+    'ArgoCD',
+    'Jenkins',
+    'GitHub'
+  ],
+
+  'Cloud Providers': [
+    'AWS',
+    'EC2',
+    'RDS',
+    'S3',
+    'VPC',
+    'Route 53',
+    'EKS',
+    'IAM',
+    'CloudWatch',
+    'GCP',
+    'Compute Engine',
+    'Cloud SQL',
+    'Cloud Storage',
+    'Cloud VPC',
+    'Disaster Recovery'
+  ],
+
+  'Fundamentals': [
+    'Networking Fundamentals',
+    'Linux Fundamentals',
+    'Git',
+    'GitHub'
+  ],
+
+  'ML/DL Algorithms': [
+    'SVM',
+    'KNN',
+    'Random Forest',
+    'Decision Tree',
+    'K-Means Clustering',
+    'MLP',
+    'CNN',
+    'RNN',
+    'RAG Systems'
+  ]
+};
 
   const projects = [
     {
