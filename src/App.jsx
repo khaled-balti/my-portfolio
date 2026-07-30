@@ -58,6 +58,30 @@ import Microsoft9 from "./assets/microsoft9.png"
 import Microsoft10 from "./assets/microsoft10.png"
 import MicrosoftDemo from './assets/microsoft demo.mp4'
 import Monitoring2 from './assets/monitoring2.png'
+import CloudDemo from './assets/cloud-demo.mp4'
+import CloudD1 from './assets/cloud-architecture-diagramm1.png'
+import CloudD2 from './assets/cloud-architecture-diagramm2.png'
+import Cloud1 from './assets/add-user.png'
+import Cloud2 from './assets/admin-reg.png'
+import Cloud3 from './assets/chatbot-interface.png'
+import Cloud4 from './assets/company-reg.png'
+import Cloud5 from './assets/credential-migration.png'
+import Cloud6 from './assets/credentials-list.png'
+import Cloud7 from './assets/landing.png'
+import Cloud8 from './assets/login.png'
+import Cloud9 from './assets/migration-history.png'
+import Cloud10 from './assets/pipeline-approval.png'
+import Cloud11 from './assets/pipeline-conversion.png'
+import Cloud12 from './assets/pipeline-list.png'
+import Cloud13 from './assets/pipeline-post-migration.png'
+import Cloud14 from './assets/pipeline-pre-migration.png'
+import Cloud15 from './assets/repo-list.png'
+import Cloud16 from './assets/repo-migration-interface.png'
+import Cloud17 from './assets/repo-pre-migration.png'
+import Cloud18 from './assets/repo-post-migration.png'
+import Cloud19 from './assets/settings.png'
+import Cloud20 from './assets/terminal-interface.png'
+import Cloud21 from './assets/users-list.png'
 const Portfolio = () => {
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
@@ -125,24 +149,71 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Java CI/CD Pipeline on AWS',
-      description: 'Built complete CI/CD pipeline with Jenkins, Docker, and EKS. Automated AWS infrastructure with Terraform.',
-      tags: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Terraform'],
-      image: Proj4,
-      gradient: 'from-orange-500 to-red-600',
+      title: 'Migration of development environment into GCP and Github',
+      description: 'Automated DevOps platform for GitLab-to-GitHub migration with cloud setup, CI/CD transformation, monitoring, and validation.',
+      tags: ['Python', 'GitLab API', 'GitHub API', 'Automation', 'CI/CD', 'migration', 'VPN'],
+      image: Cloud7,
+      gradient: 'from-blue-500 to-cyan-600',
       details: {
-        overview: 'Comprehensive CI/CD pipeline implementation for Java web applications with complete automation from code commit to production deployment on AWS EKS.',
+        overview: 'End-to-end DevOps migration platform developed to automate the migration of software projects from GitLab to GitHub. The solution combines cloud infrastructure provisioning, secure VM management, backup automation, monitoring and alerting, repository analysis, migration execution, CI/CD pipeline transformation, and post-migration verification to ensure a secure and reliable migration process with minimal manual intervention.',
         features: [
-          'Automated build, test, and deployment pipeline using Jenkins',
-          'Docker containerization for consistent environments',
-          'Kubernetes orchestration on AWS EKS for high availability',
-          'Infrastructure as Code with Terraform',
-          'Ansible for configuration management',
-          'Integration with GitHub for version control'
+          'Provision cloud infrastructure',
+          'Establish secure connection to the VM with VPN',
+          'Configure a backup system to automatically backup data from github, VM disk and Googlr Drive',
+          'Configure a cloud monitoring system and alerting channel',
+          'Automated discovery of GitLab repositories using API integration',
+          'Repository analysis and risk assessment based on migration criteria',
+          'Automated migration of repositories from GitLab to GitHub',
+          'Preservation of branches, commits, tags, and repository history',
+          'Post-migration verification of migrated repositories',
+          'Generation of migration reports and assessment results',
+          'Automation scripts for automatic pipeline migration from jenkins to github actions',
+          'Integration with CI/CD workflows for migration validation',
+          'Integrate a RAG chatbot to simplify data querying'
         ],
-        technologies: ['Jenkins', 'Docker', 'Kubernetes', 'AWS EKS', 'Terraform', 'Ansible', 'Maven', 'Apache Tomcat'],
+
+        technologies: [
+          'Python',
+          'GitLab API',
+          'GitHub API',
+          'Jenkins',
+          'Docker',
+          'CI/CD',
+          'Shell Scripts',
+          'Terraform',
+          'React',
+          'Django',
+          'Flask',
+          'Google Cloud Platform',
+          'RAG',
+          'Docker'
+        ],
+
         media: [
-          { type: 'image', url: Proj4, caption: 'CI/CD Pipeline Architecture' },
+          { type: 'image', url: CloudD1, caption: 'Cloud VMs diagram' },
+          { type: 'image', url: CloudD2, caption: 'Backup system diagram' },
+          { type: 'image', url: Cloud1, caption: 'Add user interface' },
+          { type: 'image', url: Cloud2, caption: 'Admin registration' },
+          { type: 'image', url: Cloud3, caption: 'Chatbot interface' },
+          { type: 'image', url: Cloud4, caption: 'company registration form' },
+          { type: 'image', url: Cloud5, caption: 'credentials  migration interface' },
+          { type: 'image', url: Cloud6, caption: 'credentials list' },
+          { type: 'image', url: Cloud7, caption: 'landing page' },
+          { type: 'image', url: Cloud8, caption: 'login form' },
+          { type: 'image', url: Cloud9, caption: 'migration history section' },
+          { type: 'image', url: Cloud10, caption: 'approve pipeline migration' },
+          { type: 'image', url: Cloud11, caption: 'convert pipeline' },
+          { type: 'image', url: Cloud12, caption: 'pipelines list' },
+          { type: 'image', url: Cloud13, caption: 'pipelines pre-migration infos' },
+          { type: 'image', url: Cloud14, caption: 'pipelines post-migration infos' },
+          { type: 'image', url: Cloud15, caption: 'repositories list' },
+          { type: 'image', url: Cloud16, caption: 'repository migration interface' },
+          { type: 'image', url: Cloud17, caption: 'repositories pre-migration infos' },
+          { type: 'image', url: Cloud18, caption: 'repositories post-migration infos' },
+          { type: 'image', url: Cloud19, caption: 'settings section' },
+          { type: 'image', url: Cloud20, caption: 'terminal interface' },
+          { type: 'image', url: Cloud21, caption: 'users list' },
+          { type: 'video', url: CloudDemo, caption: 'Demo' },
         ]
       }
     },
@@ -468,6 +539,18 @@ const Portfolio = () => {
 
   const experience = [
     {
+      role: 'End-of-Studies Project (PFE) – Cloud & Devops Engineer',
+      company: 'ITDC Abshore',
+      period: 'Feb 2026 - Jul 2026',
+      achievements: ['Deployed secure GCP infrastructure using Terraform (IaC), VPC networking, and IAM for cloud migration', 'Engineered an automated GUI migration platform with RBAC to transition GitLab/Jenkins to GitHub/Actions', 'Integrated an OpenAI chatbot for automated log analysis, repository auditing, and system troubleshooting.']
+    },
+    {
+      role: 'Full-Stack Developer Freelance',
+      company: 'Freelance',
+      period: '2025 - Present',
+      achievements: ['Impelement a restaurent management system']
+    },
+    {
       role: 'Full-Stack Developer Intern',
       company: 'Horizon Simulations UK',
       period: 'Jun 2025 - Jul 2025',
@@ -749,10 +832,13 @@ const Portfolio = () => {
                     <p>• CCNAv7: Introduction to Networks</p>
                     <p>• CCNAv7: Switching, Routing, and Wireless Essentials</p>
                     <p>• 4.0 Industry Fundamentals</p>
+                    <p>• Nvidia: Fundamentals of Deep Learning</p>
                   </div>
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
       </section>
